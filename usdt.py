@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import random
 from datetime import datetime
+import pandas as pd
 i = 0
 while True:
     if i%300 == 0:
