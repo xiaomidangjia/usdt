@@ -29,7 +29,9 @@ while True:
         data = pd.concat([data,df])
         data.to_csv('usdt.csv')
         i += 1
+        time.time.sleep(1)
     else:
         i += 1
+        time.time.sleep(1)
         continue
 
