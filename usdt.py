@@ -27,11 +27,11 @@ while True:
         data = pd.read_csv('usdt.csv')
         df = pd.DataFrame({'date':dt_string,'usd':usd,'usdt':usdt},index=[0])
         data = pd.concat([data,df])
-        data.to_csv('usdt.csv')
+        data.to_csv('usdt.csv',index=False)
         i += 1
-        time.time.sleep(1)
+        time.sleep(1)
     else:
         i += 1
-        time.time.sleep(1)
+        time.sleep(1)
         continue
 
